@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 const About = () => {
   return (
     <section id="about" className={styles.section}>
-      <h2>Our Mission</h2>
+      <h2>About Us</h2>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <Flask size={40} />

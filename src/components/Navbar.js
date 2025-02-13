@@ -28,8 +28,8 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className={styles.navLinks}>
           <a href="#about" className={styles.navLink}>About</a>
-          <a href="#research" className={styles.navLink}>Research</a>
-          <a href="#technology" className={styles.navLink}>Technology</a>
+          <a href="#research" className={styles.navLink}>Services</a>
+          <a href="#technology" className={styles.navLink}>For More Info</a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -42,8 +42,8 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <a href="#about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="#research" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Research</a>
-          <a href="#technology" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Technology</a>
+          <a href="#research" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Services</a>
+          <a href="#technology" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>For More Info</a>
         </div>
       )}
     </nav>
