@@ -1,66 +1,105 @@
-import styles from "../styles/Home.module.css";
+import React from 'react';
+import styles from '@/styles/Home.module.css';
 
 const servicesData = [
   {
-    title: "Mineral Analysis",
-    description: "Comprehensive analysis of Chromite and Manganese Ores, including sample preparation and chemical testing.",
-    details: [
-      "Sample Preparation - Drying, Crushing, Milling, Screening, Splitting",
-      "Chemical Analysis - X-Ray Fluorescence (XR-F), Wet Chemistry",
-      "Physical Properties - Sieve Analysis, Particle Size Distribution",
-    ],
+    title: 'Mineral Analysis',
+    description: 'We conduct qualitative and quantitative analyses on Chromite and Manganese Ores.',
+    table: {
+      headers: ['Process', 'Details'],
+      rows: [
+        ['Sample Preparation', 'Drying, Crushing, Milling, Screening, Splitting'],
+        ['Chemical Analysis', 'X-Ray Fluorescence (XR-F), Wet Chemistry (Manual Titrations)'],
+        ['Physical Properties', 'Sieve Analysis, Particle Size Distribution, Inherent Moisture, Bulk Density, Specific Gravity'],
+      ],
+    },
   },
   {
-    title: "Liquid Fuel Analysis",
-    description: "Testing for compliance with SANS standards for diesel, petrol, and industrial oils.",
-    details: [
-      "Diesel & Petrol - Meets SANS 342:2016 and SANS 1598:2006",
-      "Industrial Oil - Monitoring oil condition & machinery health",
-    ],
+    title: 'Liquid Fuel Analysis',
+    description: 'Ensuring compliance with SANS standards, we test diesel, petrol, and industrial oil.',
+    table: {
+      headers: ['Test', 'Diesel', 'Petrol'],
+      rows: [
+        ['Distillation', '✅', '✅'],
+        ['Density at 20°C', '✅', '✅'],
+        ['Viscosity at 40°C', '✅', '❌'],
+        ['Flashpoint', '✅', '❌'],
+        ['Total Contamination', '✅', '❌'],
+        ['Water Content', '✅', '❌'],
+        ['Sulphur Content', '✅', '❌'],
+        ['Cetane Number', '✅', '❌'],
+        ['Lead Content', '❌', '✅'],
+      ],
+    },
   },
   {
-    title: "Solid Fuel Analysis",
-    description: "Comprehensive analysis of coal and coke under ASTM, ISO, and BSI standards.",
-    details: [
-      "Physio-chemical and mineralogical testing",
-      "Customized packages based on client needs",
-    ],
+    title: 'Solid Fuel Analysis',
+    description: 'We conduct extensive physio-chemical and mineralogical analyses of coal and coke.',
+    table: {
+      headers: ['Test', 'Details'],
+      rows: [
+        ['Total Moisture', 'Determines water content in coal'],
+        ['Inherent Moisture', 'Measures moisture retained within coal structure'],
+        ['Ash Content', 'Determines non-combustible residue'],
+        ['Volatile Matter', 'Measures gaseous emissions from combustion'],
+        ['Gross & Net Calorific Value', 'Measures energy output'],
+      ],
+    },
   },
   {
-    title: "Water Analysis",
-    description: "Ensuring compliance for drinking water, wastewater, and process water.",
-    details: [
-      "Drinking Water - SANAS 241-1:2015 compliance",
-      "Wastewater - Industrial effluent water testing",
-      "Process Water - Boiler and cooling tower compliance",
-    ],
+    title: 'Water Quality Analysis',
+    description: 'We conduct compliance testing for drinking water, wastewater, and process water.',
+    table: {
+      headers: ['Parameter', 'Drinking Water', 'Wastewater'],
+      rows: [
+        ['pH Level', '✅', '✅'],
+        ['Conductivity', '✅', '✅'],
+        ['Sodium & Potassium', '✅', '✅'],
+        ['Nitrate & Fluoride', '✅', '✅'],
+        ['E. Coli Presence', '✅', '✅'],
+      ],
+    },
   },
 ];
 
-const Research = () => {
+const Services = () => {
   return (
-    <section id="research" className={styles.section}>
+    <section className={styles.section} id="services">
       <h2>Our Services</h2>
-      <p>
-        Our comprehensive range of services and products are designed to meet your unique needs and
-        help you reach the optimum potential of your operations through data-driven insights.
-      </p>
-
-      <div className={styles.cardContainer}>
-        {servicesData.map((service, index) => (
-          <div key={index} className={styles.card}>
-            <h3>{service.title}</h3>
-            <p>{service.description}</p>
-            <ul>
-              {service.details.map((detail, i) => (
-                <li key={i}>{detail}</li>
+      <p>Grey Matter Laboratories is dedicated to delivering exceptional analytical services and laboratory solutions.</p>
+      {servicesData.map((service, index) => (
+        <div key={index} className={styles.serviceSection}>
+          <h3>{service.title}</h3>
+          <p>{service.description}</p>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                {service.table.headers.map((header, i) => (
+                  <th key={i}>{header}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {service.table.rows.map((row, i) => (
+                <tr key={i}>
+                  {row.map((cell, j) => (
+                    <td key={j}>{cell}</td>
+                  ))}
+                </tr>
               ))}
-            </ul>
-          </div>
-        ))}
+            </tbody>
+          </table>
+        </div>
+      ))}
+      <h2>Why Choose Us?</h2>
+      <div className={styles.cardContainer}>
+        <div className={styles.card}><h3>Cutting-Edge Technology</h3><p>We utilize the latest analytical instruments and methodologies.</p></div>
+        <div className={styles.card}><h3>Regulatory Compliance</h3><p>Adherence to SANS, ASTM, ISO, and BSI standards.</p></div>
+        <div className={styles.card}><h3>Quick Turnaround</h3><p>We provide accurate results in the shortest possible time.</p></div>
+        <div className={styles.card}><h3>Industry Expertise</h3><p>Serving multiple industries, including mining, construction, agriculture, energy, and healthcare.</p></div>
       </div>
     </section>
   );
 };
 
-export default Research;
+export default Services;

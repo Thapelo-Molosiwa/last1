@@ -5,21 +5,28 @@ const About = () => {
   return (
     <section id="about" className={styles.section}>
       <h2>About Us</h2>
+      <p>
+        Grey Matter Laboratories (Pty) Ltd is a proudly South African, youth-owned laboratory headquartered in Pretoria,
+        with a national footprint. Founded by two multidisciplinary professionals, we provide cutting-edge analytical services
+        across various industries, including mining, construction, agriculture, energy, and healthcare.
+      </p>
+      <p>
+        We specialize in laboratory equipment supply, consumables, advanced testing, and on-site laboratory setup and
+        management. Our solutions are tailored to meet the diverse and evolving needs of our clients, ensuring they have
+        access to reliable and precise analytical services that align with international testing standards.
+      </p>
       <div className={styles.cardContainer}>
         <div className={styles.card}>
           <Flask size={40} />
           <h3>Research Excellence</h3>
-          <p>Pioneering breakthrough discoveries in neuroscience.</p>
         </div>
         <div className={styles.card}>
           <Microscope size={40} />
           <h3>Innovation</h3>
-          <p>Developing cutting-edge brain research technologies.</p>
         </div>
         <div className={styles.card}>
           <AtomIcon size={40} />
           <h3>Collaboration</h3>
-          <p>Building partnerships to accelerate discoveries.</p>
         </div>
       </div>
     </section>
