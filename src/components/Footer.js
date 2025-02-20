@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import logo from '../../public/4.png';
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Footer.module.css";
+
 
 const Footer = () => {
   return (

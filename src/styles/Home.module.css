@@ -225,7 +225,7 @@
 
   .serviceSection h3 {
     font-size: 1.5rem;
-  margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .serviceSection p {
@@ -245,18 +245,131 @@
   }
 }
 
-/* Footer */
-.footer {
-  background: #001f4d;
-  color: white;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 4rem;
+/* Container */
+.container {
+  min-height: 100vh;
+  padding: 2rem 1rem;
 }
 
-/* Responsive Design */
+.content {
+  max-width: 48rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: #bfdbfe;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem; /* Reduced gap for a tighter layout */
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Card Content with Box Shadow */
+.cardContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+
+.downloadLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(10, 10, 205);
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.downloadLink:hover {
+  background-color: rgb(8, 8, 124);
+}
+
+
+.iconContainer {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: #2563eb;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  color: #bfdbfe;
+}
+
 @media (max-width: 768px) {
-  .section {
-    padding: 3rem 1rem;
+  .grid {
+    grid-template-columns: 1fr; /* Switch to a single column layout */
+    gap: 0.75rem; /* Reduced gap between cards */
+  }
+  
+  .card {
+    padding: 1rem; /* Slightly reduce card padding */
+  }
+  
+  .cardContent {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    text-align: center;
+    padding: 0.75rem; /* Adjust inner padding */
+  }
+  
+  .iconContainer {
+    margin-bottom: 0.5rem; /* Add spacing below the icon */
+  }
+  
+  .cardTitle {
+    font-size: 1.125rem; /* Adjust title font size for mobile */
+  }
+  
+  .cardDescription {
+    font-size: 0.9rem; /* Adjust description font size for mobile */
   }
 }
