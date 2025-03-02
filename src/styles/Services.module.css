@@ -1,0 +1,289 @@
+/* Section Styles */
+.section {
+    background: linear-gradient(to bottom, #001f4d, #004080);
+    color: white; /* White text for contrast */
+    padding: 0 0 4rem 0; /* Padding at the bottom */
+  }
+
+  
+  /* Hero Container */
+  .heroContainer {
+    position: relative;
+    height: 60vh; /* Full viewport height */
+    width: 100%;
+    overflow: hidden; /* Prevent overflow */
+    margin-bottom: 4rem; /* Margin at the bottom */
+  }
+  
+  /* Hero Image */
+  .heroImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the container */
+    filter: brightness(0.7); /* Darken the image for better text contrast */
+  }
+  
+  /* Hero Content */
+  .heroContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 1200px; /* Max width for large screens */
+  }
+  
+  /* Hero Title */
+  .heroTitle {
+    font-size: 3rem; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 1rem; /* Spacing below the title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
+  }
+  
+  /* Description */
+  .description {
+    font-size: 1.2rem; /* Medium font size */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white text */
+    max-width: 800px;
+    margin: 0 auto 2rem; /* Center and add spacing */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* Download Link */
+  .downloadLink {
+    display: inline-block;
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    padding: 0.75rem 1.5rem; /* Padding for the button */
+    border-radius: 4px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: 600; /* Semi-bold font weight */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .downloadLink:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1.5rem; /* Padding on the sides */
+  }
+  
+  /* Section Header */
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 3rem; /* Spacing below the header */
+  }
+  
+  .sectionTitle {
+    font-size: 2rem; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+    color: white; /* White text for contrast */
+    margin-bottom: 1rem; /* Spacing below the title */
+  }
+  
+  .sectionDescription {
+    font-size: 1.1rem; /* Medium font size */
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white text */
+    max-width: 800px; /* Limit width for readability */
+    margin: 0 auto; /* Center the description */
+    line-height: 1.6; /* Improve readability */
+  }
+  
+  /* Services Grid */
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cards in one row */
+    gap: 2rem; /* Spacing between cards */
+    margin-bottom: 4rem; /* Margin at the bottom */
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1.5rem; /* Padding inside the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    backdrop-filter: blur(5px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift the card on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  /* Card Content */
+  .cardContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem; /* Spacing between icon and text */
+    flex: 1; /* Ensure content takes up remaining space */
+  }
+  
+  /* Icon Container */
+  .iconContainer {
+    background-color: #3498db; /* Blue background */
+    border-radius: 50%; /* Circular shape */
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Prevent shrinking */
+  }
+  
+  /* Icon */
+  .icon {
+    color: white; /* White icon */
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+  }
+  
+  /* Card Title */
+  .cardTitle {
+    font-size: 1.25rem; /* Medium font size */
+    font-weight: 600; /* Semi-bold font weight */
+    margin-bottom: 0.5rem; /* Spacing below the title */
+    color: white; /* White text for contrast */
+  }
+  
+  /* Card Description */
+  .cardDescription {
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.5; /* Improve readability */
+    flex: 1; /* Ensure description takes up remaining space */
+  }
+  
+  /* New Card Layout */
+  .newCardContainer {
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1.5rem; /* Padding on the sides */
+    margin-bottom: 4rem; /* Margin at the bottom */
+  }
+  
+  .newCardGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2rem; /* Spacing between cards */
+  }
+  
+  .newCard {
+    background-color: white; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+ 
+  
+  .newCardImage {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the container */
+  }
+  
+  .newCardContent {
+    padding: 1.5rem; /* Padding inside the card */
+  }
+  
+  .newCardHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Spacing below the header */
+  }
+  
+  .newCardIcon {
+    width: 24px; /* Icon size */
+    height: 24px; /* Icon size */
+    color: #2563eb; /* Blue icon color */
+    margin-right: 0.5rem; /* Spacing between icon and title */
+  }
+  
+  .newCardTitle {
+    font-size: 1.25rem; /* Medium font size */
+    font-weight: 600; /* Semi-bold font weight */
+    color: #1e293b; /* Dark gray text */
+  }
+  
+  .newCardDescription {
+    font-size: 1rem; /* Small font size */
+    color: #4b5563; /* Gray text */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  /* Why Choose Us Section */
+  .whyChooseUs {
+    text-align: center; /* Center the title */
+    margin-bottom: 4rem; /* Margin at the bottom */
+  }
+  
+  .whyChooseUs .title {
+    font-size: 2.5rem; /* Large font size */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 2rem; /* Spacing below the title */
+  }
+  
+  .whyChooseUsContent {
+    display: flex;
+    gap: 2rem; /* Spacing between items */
+    justify-content: center; /* Center items horizontally */
+    max-width: 1200px; /* Max width for content */
+    margin: 0 auto; /* Center the container */
+    padding: 0 1.5rem; /* Padding on the sides */
+  }
+  
+  .whyChooseUsItem {
+    flex: 1; /* Ensure items take equal width */
+    max-width: 300px; /* Limit item width */
+    text-align: center; /* Center text */
+  }
+  
+  .whyChooseUsTitle {
+    font-size: 1.5rem; /* Medium font size */
+    font-weight: 600; /* Semi-bold font weight */
+    margin-bottom: 1rem; /* Spacing below the title */
+    color: white; /* White text for contrast */
+  }
+  
+  .whyChooseUsDescription {
+    font-size: 1rem; /* Small font size */
+    color: #e0e0e0; /* Light gray text for contrast */
+    line-height: 1.5; /* Improve readability */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .heroTitle {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .description {
+      font-size: 1rem; /* Smaller font size for mobile */
+    }
+  
+    .servicesGrid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .newCardGrid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+    }
+  
+    .whyChooseUsContent {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .whyChooseUsItem {
+      max-width: 100%; /* Full width on mobile */
+    }
+  }

@@ -1,7 +1,7 @@
 "use client"; // Needed for animations in Next.js App Router
 
 import { motion } from "framer-motion";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Hero.module.css";
 
 const Hero = () => {
   return (
@@ -24,9 +24,9 @@ const Hero = () => {
           style={{ marginTop: "20px" }}
         >
           Just as grey matter in the human brain processes information, drives
-          decision-making and controls vital fucntions, Grey Matter Laboratories
-          plays a pivital role in empowering industries with accurate,
-          insightful and reliable analytical services.
+          decision-making and controls vital functions, Grey Matter Laboratories
+          plays a pivotal role in empowering industries with accurate,
+          insightful, and reliable analytical services.
         </motion.p>
       </div>
     </section>

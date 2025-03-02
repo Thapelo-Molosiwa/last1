@@ -1,0 +1,110 @@
+/* Home.module.css */
+
+/* Navbar Container */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    background-color: white; /* White background by default */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  /* Nav Content */
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Add padding to prevent overflow */
+  }
+  
+  /* Logo */
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Desktop Links */
+  .navLinks {
+    display: flex;
+    gap: 1.5rem; /* Reduced gap between links */
+    margin-left: 20px; /* Push links slightly to the left */
+    padding-right: 1rem; /* Add padding to prevent overflow */
+  }
+  
+  .navLink {
+    color: black; /* Black links by default */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem; /* Add padding for better hover effect */
+    border-radius: 8px; /* Rounded corners for hover effect */
+  }
+  
+  .navLink:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Glass background on hover */
+    backdrop-filter: blur(10px); /* Glass blur effect on hover */
+    color: #ff7f50; /* Orange highlight on hover */
+  }
+  
+  /* Mobile Menu Button */
+  .menuButton {
+    display: none; /* Hidden by default on desktop */
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black; /* Black icon for mobile menu */
+  }
+  
+  .menuIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Mobile Menu */
+  .mobileMenu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9); /* Glass background for mobile menu */
+    backdrop-filter: blur(10px); /* Glass blur effect */
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+  
+  .mobileLink {
+    color: black; /* Black links for mobile menu */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem; /* Add padding for better hover effect */
+    border-radius: 8px; /* Rounded corners for hover effect */
+  }
+  
+  .mobileLink:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Glass background on hover */
+    backdrop-filter: blur(10px); /* Glass blur effect on hover */
+    color: #ff7f50; /* Orange highlight on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none; /* Hide desktop links on mobile */
+    }
+  
+    .menuButton {
+      display: block; /* Show mobile menu button */
+    }
+  
+    .mobileMenu {
+      display: flex; /* Show mobile menu when open */
+    }
+  }

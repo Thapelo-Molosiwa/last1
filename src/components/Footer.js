@@ -5,7 +5,7 @@ import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
   return (
-    <footer className={styles.footer}>
+    <footer id='contacts' className={styles.footer}>
       
       <div className={styles.logo}>
           <Image src={logo} alt="Grey Matter Logo" width={250} height={90} priority />

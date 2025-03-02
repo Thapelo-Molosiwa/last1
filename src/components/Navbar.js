@@ -1,6 +1,6 @@
 'use client'
 import React, { useState, useEffect } from 'react';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Navbar.module.css';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
 import logo from '../../public/4.png'; // Make sure 4.png is inside the public folder
@@ -22,14 +22,15 @@ export default function Navbar() {
       <div className={styles.navContent}>
         {/* Logo (Now an Image) */}
         <a href="#" className={styles.logo}>
-          <Image src={logo} alt="Grey Matter Logo" width={250} height={90} priority />
+          <Image src={logo} alt="Grey Matter Logo" width={220} height={70} priority />
         </a>
 
         {/* Desktop Links */}
         <div className={styles.navLinks}>
           <a href="#about" className={styles.navLink}>About</a>
-          <a href="#research" className={styles.navLink}>Services</a>
-          <a href="#technology" className={styles.navLink}>For More Info</a>
+          <a href="#services" className={styles.navLink}>Services</a>
+          <a href="#products" className={styles.navLink}>Products</a>
+          <a href="#contacts" className={styles.navLink}>For More Info</a>
         </div>
 
         {/* Mobile Menu Button */}
