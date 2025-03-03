@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyrightSection}>
-        <small className={styles.copyrightText}>© 2025 Grey Matter Labs. All rights reserved.</small>
+        <small className={styles.copyrightText}>© 2024 Grey Matter Labs. All rights reserved.</small>
       </div>
     </footer>
   );
