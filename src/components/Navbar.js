@@ -43,8 +43,10 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className={styles.mobileMenu}>
           <a href="#about" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>About</a>
-          <a href="#research" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Services</a>
-          <a href="#technology" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>For More Info</a>
+          <a href="#services" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Services</a>
+          <a href="#products" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>Products</a>
+          <a href="#contacts" className={styles.mobileLink} onClick={() => setIsMenuOpen(false)}>For More Info</a>
+        
         </div>
       )}
     </nav>
