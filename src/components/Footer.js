@@ -6,12 +6,7 @@ const Footer = () => {
   return (
     <footer id='contacts' className={styles.footer}>
       <div className={styles.footerContent}>
-        <div className={styles.logoSection}>
-          <div className={styles.logo}>
-            <Image src={logo} alt="Grey Matter Logo" width={150} height={60} priority />
-          </div>
-          <p className={styles.tagline}>Premium Quality for Scientific Excellence</p>
-        </div>
+        
 
         <div className={styles.contactSection}>
           <div className={styles.contactBlock}>
@@ -35,6 +30,13 @@ const Footer = () => {
             <p className={styles.contactDetail}>Monday to Friday: 08:00 AM - 05:00 PM</p>
             <p className={styles.contactDetail}>Weekend and Public Holidays: Closed</p>
           </div>
+        </div>
+
+        <div className={styles.logoSection}>
+          <div className={styles.logo}>
+            <Image src={logo} alt="Grey Matter Logo" width={150} height={60} priority />
+          </div>
+          <p className={styles.tagline}>Premium Quality for Scientific Excellence</p>
         </div>
       </div>
 
