@@ -22,7 +22,7 @@ export default function Navbar() {
       <div className={styles.navContent}>
         {/* Logo (Now an Image) */}
         <a href="#" className={styles.logo}>
-          <Image src={logo} alt="Grey Matter Logo" width={220} height={70} priority />
+          <Image src={logo} alt="Grey Matter Logo" width={250} height={250} priority />
         </a>
 
         {/* Desktop Links */}

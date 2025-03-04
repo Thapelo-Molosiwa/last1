@@ -12,13 +12,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Grey Matter lab",
+  title: "Grey Matter Lab",
   description: "Created by Thapelo Molosiwa",
+  
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
       </body>
