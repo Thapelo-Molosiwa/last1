@@ -12,7 +12,7 @@ const Footer = () => {
           <div className={styles.contactBlock}>
             <h3 className={styles.contactTitle}>GREY MATTER LABORATORIES</h3>
             <p className={styles.contactDetail}>Physical Address: 1386 Block F Soshanguve, Pretoria, 0152</p>
-            <p className={styles.contactDetail}>Telephone: +27 079 783 0760</p>
+            <p className={styles.contactDetail}>Telephone: (+27)79 783 0760</p>
             <p className={styles.contactDetail}>Email: lebogangm@gmatterlabs.com</p>
             <p className={styles.contactDetail}>Website: www.gmatterlabs.co.za</p>
             <p className={styles.contactDetail}>Contact Person: Lebogang Mogaladi</p>
