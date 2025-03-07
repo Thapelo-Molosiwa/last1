@@ -49,7 +49,9 @@
 }
 
 .smallText {
-  font-size: 0.8em; /* Adjust the size as needed */
+  font-size: 0.9em; /* Adjust the size as needed */
+  display: block; /* Makes the span appear on a new line */
+  margin-top: 4px; /* Optional: Adds some spacing between the h3 and the span */
 }
 
 .logoSection {
