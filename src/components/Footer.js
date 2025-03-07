@@ -21,7 +21,9 @@ const Footer = () => {
             <p className={styles.contactDetail}>
               Email: info@gmatterlabs.com
             </p>
-            
+            <p className={styles.contactDetail}>
+              Website: www.gmatterlabs.co.za
+            </p>
             
           </div>
 
