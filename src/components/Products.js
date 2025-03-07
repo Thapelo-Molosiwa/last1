@@ -107,7 +107,7 @@ const Products = () => {
               alt="Client Logo" 
               className={styles.clientLogo}
             />
-            <p className={styles.clientName}>Client Name</p> {/* Replace with actual client name */}
+            <p className={styles.clientName}>ARC.LNR</p> {/* Replace with actual client name */}
           </div>
         </div>
       </div>
