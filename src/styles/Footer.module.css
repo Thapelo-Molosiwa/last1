@@ -14,17 +14,14 @@
 }
 
 .contactSection {
-  display: flex;
-  justify-content: space-between; /* Align items in one line */
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .contactBlock {
   text-align: left;
-  flex: 1; /* Ensure each contact block takes equal space */
-  min-width: 250px; /* Prevent shrinking below a certain size */
 }
 
 .contactTitle {
@@ -46,7 +43,7 @@
 /* Logo and Social Media Section */
 .logoAndSocial {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
 }
@@ -72,6 +69,15 @@
 .socialMedia {
   display: flex;
   gap: 20px; /* Space between icons */
+}
+
+.socialMedia a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.socialMedia a:hover {
+  color: #66b3ff; /* Change color on hover */
 }
 
 .socialIcon {
@@ -105,14 +111,12 @@
   }
 
   .contactSection {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
   .contactBlock {
     text-align: center;
-    width: 100%;
   }
 
   .logoAndSocial {
