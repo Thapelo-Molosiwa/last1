@@ -19,14 +19,10 @@ const Footer = () => {
             </p>
             <p className={styles.contactDetail}>Telephone: (+27)79 783 0760</p>
             <p className={styles.contactDetail}>
-              Email: lebogangm@gmatterlabs.com
+              Email: info@gmatterlabs.com
             </p>
-            <p className={styles.contactDetail}>
-              Website: www.gmatterlabs.co.za
-            </p>
-            <p className={styles.contactDetail}>
-              Contact Person: Lebogang Mogaladi
-            </p>
+            
+            
           </div>
 
           <div className={styles.contactBlock}>
@@ -38,11 +34,9 @@ const Footer = () => {
               Physical Address: 172 Kroonarend, Daleside, Meyerton, 1960
             </p>
             <p className={styles.contactDetail}>
-              Email: nkululekom@gmatterlabs.com
+              Email: info@gmatterlabs.com
             </p>
-            <p className={styles.contactDetail}>
-              Contact Person: Nkululeko Mbonane
-            </p>
+            
           </div>
 
           <div className={styles.contactBlock}>
