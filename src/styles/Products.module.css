@@ -26,6 +26,37 @@
     font-size: 1.2rem;
     color: #555;
   }
+
+  /* Our Clients Section */
+.clientsSection {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.clientsTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.clientContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clientLogo {
+  width: 150px; /* Adjust as needed */
+  height: auto;
+  border-radius: 8px;
+}
+
+.clientName {
+  font-size: 1.2rem;
+  color: #555;
+  font-weight: 500;
+}
   
   /* Intro Paragraph */
   .intro {

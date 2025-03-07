@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/Products.module.css";
-import { FlaskConical, Filter, Beaker, Pipette, ChevronRight } from 'lucide-react';
+import { FlaskConical, Filter, Beaker, Pipette } from 'lucide-react';
 
 const Products = () => {
   return (
@@ -21,6 +21,7 @@ const Products = () => {
         </div>
         
         <div className={styles.productCategories}>
+          {/* Chemical Reagents Category */}
           <div className={styles.categoryCard}>
             <div className={styles.categoryHeader}>
               <div className={styles.iconContainer}>
@@ -36,10 +37,10 @@ const Products = () => {
                 <li>Precision Buffer Solutions & Calibration Standards, etc.</li>
                 <li>Custom Formulations for Specialized Applications, etc.</li>
               </ul>
-             
             </div>
           </div>
           
+          {/* Laboratory Consumables Category */}
           <div className={styles.categoryCard}>
             <div className={styles.categoryHeader}>
               <div className={styles.iconContainer}>
@@ -55,10 +56,10 @@ const Products = () => {
                 <li>Safety Equipment: Nitrile Gloves, Masks, Hair Nets, Lab Coats, etc.</li>
                 <li>Sterilization and Containment Solutions, etc.</li>
               </ul>
-              
             </div>
           </div>
           
+          {/* Precision Glassware Category */}
           <div className={styles.categoryCard}>
             <div className={styles.categoryHeader}>
               <div className={styles.iconContainer}>
@@ -74,10 +75,10 @@ const Products = () => {
                 <li>Specialized Containers: Petri Dishes, Watch Glasses, Desiccators, etc.</li>
                 <li>Custom Glassware for Unique Research Applications, etc.</li>
               </ul>
-            
             </div>
           </div>
           
+          {/* Custom Solutions Category */}
           <div className={styles.categoryCard}>
             <div className={styles.categoryHeader}>
               <div className={styles.iconContainer}>
@@ -93,8 +94,20 @@ const Products = () => {
                 <li>Bespoke Laboratory Setup and Configuration, etc.</li>
                 <li>Bulk Ordering and Supply Chain Management, etc.</li>
               </ul>
-            
             </div>
+          </div>
+        </div>
+
+        {/* Our Clients Section */}
+        <div className={styles.clientsSection}>
+          <h2 className={styles.clientsTitle}>Our Clients</h2>
+          <div className={styles.clientContainer}>
+            <img 
+              src="/WhatsApp_Image_2025-03-07_at_15.21.14-removebg-preview.png" // Path to the logo in the public folder
+              alt="Client Logo" 
+              className={styles.clientLogo}
+            />
+            <p className={styles.clientName}>Client Name</p> {/* Replace with actual client name */}
           </div>
         </div>
       </div>
