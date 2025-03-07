@@ -44,13 +44,13 @@ const Footer = () => {
 
           {/* Social Media Icons */}
           <div className={styles.socialMedia}>
-            <a href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/urpage" target="_blank" rel="noopener noreferrer">
               <Facebook className={styles.socialIcon} />
             </a>
-            <a href="https://www.linkedin.com/company/yourpage" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/company/page" target="_blank" rel="noopener noreferrer">
               <Linkedin className={styles.socialIcon} />
             </a>
-            <a href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/yage" target="_blank" rel="noopener noreferrer">
               <Instagram className={styles.socialIcon} />
             </a>
           </div>
