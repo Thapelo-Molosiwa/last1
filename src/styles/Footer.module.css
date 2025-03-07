@@ -14,14 +14,17 @@
 }
 
 .contactSection {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  display: flex;
+  justify-content: space-between; /* Align items in one line */
+  align-items: flex-start;
   gap: 2rem;
   margin-bottom: 2rem;
 }
 
 .contactBlock {
   text-align: left;
+  flex: 1; /* Ensure each contact block takes equal space */
+  min-width: 250px; /* Prevent shrinking below a certain size */
 }
 
 .contactTitle {
@@ -69,7 +72,6 @@
 .socialMedia {
   display: flex;
   gap: 20px; /* Space between icons */
-
 }
 
 .socialIcon {
@@ -103,12 +105,14 @@
   }
 
   .contactSection {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
   .contactBlock {
     text-align: center;
+    width: 100%;
   }
 
   .logoAndSocial {
