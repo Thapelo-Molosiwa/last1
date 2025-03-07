@@ -31,10 +31,10 @@ const Products = () => {
             <div className={styles.categoryDescription}>
               <p>Ultra-pure analytical grade chemicals manufactured to the highest industry standards.</p>
               <ul className={styles.itemsList}>
-                <li>Analytical Grade Acids: Nitric, Hydrochloric, Sulfuric</li>
-                <li>High-Purity Solvents: Acetone, Ethanol, Methanol</li>
-                <li>Precision Buffer Solutions & Calibration Standards</li>
-                <li>Custom Formulations for Specialized Applications</li>
+                <li>Analytical Grade Acids: Nitric, Hydrochloric, Sulfuric, etc. </li>
+                <li>High-Purity Solvents: Acetone, Ethanol, Methanol, etc.</li>
+                <li>Precision Buffer Solutions & Calibration Standards, etc.</li>
+                <li>Custom Formulations for Specialized Applications, etc.</li>
               </ul>
              
             </div>
@@ -50,10 +50,10 @@ const Products = () => {
             <div className={styles.categoryDescription}>
               <p>Essential high-quality consumables for daily laboratory operations and research.</p>
               <ul className={styles.itemsList}>
-                <li>Premium Filtration: Whatman Filter Papers, Membrane Filters</li>
-                <li>Precision Plasticware: Pipette Tips, Microplates, Centrifuge Tubes</li>
-                <li>Safety Equipment: Nitrile Gloves, Masks, Hair Nets, Lab Coats</li>
-                <li>Sterilization and Containment Solutions</li>
+                <li>Premium Filtration: Whatman Filter Papers, Membrane Filters, etc.</li>
+                <li>Precision Plasticware: Pipette Tips, Microplates, Centrifuge Tubes, etc.</li>
+                <li>Safety Equipment: Nitrile Gloves, Masks, Hair Nets, Lab Coats, etc.</li>
+                <li>Sterilization and Containment Solutions, etc.</li>
               </ul>
               
             </div>
@@ -69,10 +69,10 @@ const Products = () => {
             <div className={styles.categoryDescription}>
               <p>Laboratory-grade glassware engineered for accuracy, durability, and reliability.</p>
               <ul className={styles.itemsList}>
-                <li>Volumetric Equipment: Beakers, Erlenmeyer Flasks, Graduated Cylinders</li>
-                <li>Analytical Tools: Test Tubes, Burettes, Pipettes</li>
-                <li>Specialized Containers: Petri Dishes, Watch Glasses, Desiccators</li>
-                <li>Custom Glassware for Unique Research Applications</li>
+                <li>Volumetric Equipment: Beakers, Erlenmeyer Flasks, Graduated Cylinders, etc.</li>
+                <li>Analytical Tools: Test Tubes, Burettes, Pipettes, etc.</li>
+                <li>Specialized Containers: Petri Dishes, Watch Glasses, Desiccators, etc.</li>
+                <li>Custom Glassware for Unique Research Applications, etc.</li>
               </ul>
             
             </div>
@@ -88,10 +88,10 @@ const Products = () => {
             <div className={styles.categoryDescription}>
               <p>Tailored products and services designed to meet your specific research requirements.</p>
               <ul className={styles.itemsList}>
-                <li>Custom Chemical Formulations and Reagent Preparation</li>
-                <li>Specialized Equipment and Instrumentation</li>
-                <li>Bespoke Laboratory Setup and Configuration</li>
-                <li>Bulk Ordering and Supply Chain Management</li>
+                <li>Custom Chemical Formulations and Reagent Preparation, etc.</li>
+                <li>Specialized Equipment and Instrumentation, etc.</li>
+                <li>Bespoke Laboratory Setup and Configuration, etc.</li>
+                <li>Bulk Ordering and Supply Chain Management, etc.</li>
               </ul>
             
             </div>

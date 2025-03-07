@@ -7,8 +7,8 @@ const About = () => {
     <section id="about" className={styles.section}>
       <h2>About Us</h2>
       <p>
-        Grey Matter Laboratories (Pw) Ltd is a proudly South African,
-        youth-owned laboratory headquartered in Pretoria, with a national
+      <span className={styles.underline}>Grey Matter Laboratories (Pty) Ltd</span> is a proudly South African,
+        youth-owned laboratory headquartered in Johannesburg, with a national
         footprint. Founded by two multidisciplinary professionals, Grey Matter
         Laboratories sets itself as an emerging key in analytical services
         across various industries, including mining, construction, and

@@ -14,30 +14,35 @@ const Services = () => {
     {
       icon: <Flame className={styles.icon} />,
       title: "Solid Fuel Analysis",
-      description: "including coal, coke, Biomass",
+      description: "includes analysis for portable water, coal, coke, Biomass",
+      available: true, // Mark as available
     },
     {
       icon: <WaterIcon className={styles.icon} />,
-      title: "Water Quality analysis",
+      title: "Water Quality Analysis",
       description:
-        "including drinking water, wastewater, industrial effluents, and groundwater.",
+        "includes drinking water, wastewater, industrial effluents, and groundwater.",
+      available: false, // Mark as unavailable
     },
     {
       icon: <Droplet className={styles.icon} />,
       title: "Liquid Fuel Analysis",
-      description: "including diesel, petrol, motor and industrial oil.",
+      description: "includes diesel, petrol, motor and industrial oil.",
+      available: false, // Mark as unavailable
     },
     {
       icon: <Flask className={styles.icon} />,
-      title: "Mineral analysis",
-      description: "including chrome and manganese.",
+      title: "Mineral Analysis",
+      description: "includes chrome and manganese.",
+      available: true, // Mark as available
     },
   ];
 
   const whyChooseUs = [
     {
       title: "Cutting-Edge Technology",
-      description: "We utilize the latest analytical instruments and methodologies.",
+      description:
+        "We utilize the latest analytical instruments and methodologies.",
     },
     {
       title: "Quick Turnaround",
@@ -62,9 +67,9 @@ const Services = () => {
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Our Services</h1>
           <p className={styles.description}>
-            Our comprehensive range of services and products are designed to meet
-            your unique needs and help you reach the optimum potential of your
-            operations through data-driven insights.
+            Our comprehensive range of services and products are designed to
+            meet your unique needs and help you reach the optimum potential of
+            your operations through data-driven insights.
           </p>
           <a
             href="Grey Matter Brochure (split pages)2.pdf"
@@ -88,7 +93,12 @@ const Services = () => {
         </div>
         <div className={styles.servicesGrid}>
           {services.map((service, index) => (
-            <div key={index} className={styles.card}>
+            <div
+              key={index}
+              className={`${styles.card} ${
+                !service.available ? styles.unavailable : ""
+              }`}
+            >
               <div className={styles.cardContent}>
                 <div className={styles.iconContainer}>{service.icon}</div>
                 <div>
@@ -96,6 +106,9 @@ const Services = () => {
                   <p className={styles.cardDescription}>
                     {service.description}
                   </p>
+                  {!service.available && (
+                    <p className={styles.comingSoon}>Coming Soon</p>
+                  )}
                 </div>
               </div>
             </div>
@@ -117,23 +130,24 @@ const Services = () => {
           {/* Laboratory Services Card */}
           <div className={styles.newCard}>
             <img
-              src="/WhatsApp Image 2025-03-03 at 01.15.43.jpeg"
-              alt="Laboratory equipment including beakers and test tubes"
+              src="/WhatsApp Image 2025-03-07 at 08.32.31.jpeg"
+              alt="Laboratory equipment for coal sampling"
               className={styles.newCardImage}
             />
             <div className={styles.newCardContent}>
               <div className={styles.newCardHeader}>
                 <Flask className={styles.newCardIcon} />
-                <h2 className={styles.newCardTitle}>Laboratory Services</h2>
+                <h2 className={styles.newCardTitle}>Coal Sampling</h2>
               </div>
               <p className={styles.newCardDescription}>
-                Our range of analytical services includes products such as:
-                Mineral analysis including chrome and manganese Liquid Fuel
-                Analysis including diesel, petrol, motor and industrial oils
-                Solid Fuel Analysis including coal, coke, biomass
-                pellets/woodchips, and charcoal. Water Quality analysis
-                including drinking water, wastewater, industrial effluents, and
-                groundwater.
+                Our coal sampling involves collecting representative
+                samples from mines, processing plants, and stockpiles to assess
+                quality and composition. We follow best practices, including
+                systematic sampling methods and precise handling, to ensure
+                unbiased and accurate results. Our analysis helps clients
+                monitor coal characteristics, optimize processing efficiency,
+                and meet industry standards for quality control and regulatory
+                compliance.
               </p>
             </div>
           </div>
@@ -148,14 +162,17 @@ const Services = () => {
             <div className={styles.newCardContent}>
               <div className={styles.newCardHeader}>
                 <Droplets className={styles.newCardIcon} />
-                <h2 className={styles.newCardTitle}>Sampling</h2>
+                <h2 className={styles.newCardTitle}>Water Sampling</h2>
               </div>
               <p className={styles.newCardDescription}>
-                Our On-site Sampling involves collection of representative water
-                and coal samples at sites, processing plants, and stockpiles,
-                following best practices to ensure unbiased samples and accurate
-                analysis. We also perform water sampling including surface and
-                ground water, along with coal sampling.
+                Our water sampling services cover both surface and groundwater
+                sources, ensuring reliable data for environmental monitoring and
+                compliance. We follow strict protocols to prevent contamination
+                and maintain sample integrity, using industry-standard
+                techniques for accurate analysis. Our sampling process supports
+                water quality assessments, regulatory reporting, and
+                environmental impact studies, helping clients manage resources
+                responsibly.
               </p>
             </div>
           </div>
@@ -174,11 +191,11 @@ const Services = () => {
               </div>
               <p className={styles.newCardDescription}>
                 We collaborate with various industries that require real-time
-                analysis to establish on-site laboratory services unique to their
-                operational needs. Our Services Include: Customized Lab Design
-                Lab Setup and Equipment Installation Analytical Protocol setup
-                for sample testing and analysis. Training and Continuous Support
-                Manage the operations of the lab.
+                analysis to establish on-site laboratory services unique to
+                their operational needs. Our Services Include: Customized Lab
+                Design Lab Setup and Equipment Installation Analytical Protocol
+                setup for sample testing and analysis. Training and Continuous
+                Support Manage the operations of the lab.
               </p>
             </div>
           </div>

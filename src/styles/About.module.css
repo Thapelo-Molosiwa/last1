@@ -1,133 +1,145 @@
 /* About Section */
 .section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 4rem 2rem;
-    color: #000;
-    background-color: white;
-  }
-  
-  /* About Us Heading */
-  .section h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1.5rem;
-    color: #001f4d; /* Dark blue for contrast */
-    position: relative;
-  }
-  
-  .section h2:after {
-    content: '';
-    display: block;
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(to right, #004080, #001f4d); /* Gradient underline */
-    margin: 0.5rem auto 2rem;
-    border-radius: 2px;
-  }
-  
-  /* About Us Paragraph */
-  .section > p {
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    color: #111111; /* Slightly darker text for readability */
-  }
-  
-  /* Sub-Sections (Background, Vision, Mission, Applications & Services) */
-  .subSection {
-    margin-bottom: 2.5rem;
-    text-align: left;
-    padding-left: 1.5rem;
-    border-left: 4px solid #004080; /* Dark blue border */
-    background: linear-gradient(to right, rgba(0, 64, 128, 0.05), white); /* Subtle gradient background */
-    padding: 1.5rem;
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .subSection:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .subSection h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    color: #001f4d; /* Dark blue for headings */
-  }
-  
-  .subSection p {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #111111;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #000;
+  background-color: white;
 }
-  
-  /* Applications & Services List */
-  .servicesList {
-    list-style-type: disc;
-    padding-left: 2rem;
-    max-width: 800px;
-    text-align: left;
-  }
-  
-  .servicesList li {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #252525; /* Slightly darker text for list items */
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Card Container */
-  .cardContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  
-  /* Card Styles */
-  .card {
-    background: white;
-    border-radius: 8px;
-    padding: 2rem;
-   display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
 
-  
-  .card svg {
-    color: #000000; /* Dark blue for icons */
-    margin-bottom: 1.5rem;
+
+.underline {
+  text-decoration: underline;
+  font-weight: lighter;
+}
+
+/* About Us Heading */
+.section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #001f4d; /* Dark blue for contrast */
+  position: relative;
+}
+
+.section h2:after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #004080,
+    #001f4d
+  ); /* Gradient underline */
+  margin: 0.5rem auto 2rem;
+  border-radius: 2px;
+}
+
+/* About Us Paragraph */
+.section > p {
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  color: #111111; /* Slightly darker text for readability */
+}
+
+/* Sub-Sections (Background, Vision, Mission, Applications & Services) */
+.subSection {
+  margin-bottom: 2.5rem;
+  text-align: left;
+  padding-left: 1.5rem;
+  border-left: 4px solid #004080; /* Dark blue border */
+  background: linear-gradient(
+    to right,
+    rgba(0, 64, 128, 0.05),
+    white
+  ); /* Subtle gradient background */
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subSection:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.subSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #001f4d; /* Dark blue for headings */
+}
+
+.subSection p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #111111;
+}
+
+/* Applications & Services List */
+.servicesList {
+  list-style-type: disc;
+  padding-left: 2rem;
+  max-width: 800px;
+  text-align: left;
+}
+
+.servicesList li {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #252525; /* Slightly darker text for list items */
+  margin-bottom: 0.5rem;
+}
+
+/* Card Container */
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+/* Card Styles */
+.card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card svg {
+  color: #000000; /* Dark blue for icons */
+  margin-bottom: 1.5rem;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #000000; /* Dark blue for headings */
+}
+
+.card p {
+  color: #555; /* Slightly darker text for readability */
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section {
+    padding: 3rem 1.5rem;
   }
-  
-  .card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-    color: #000000; /* Dark blue for headings */
+
+  .section h2 {
+    font-size: 2rem;
   }
-  
-  .card p {
-    color: #555; /* Slightly darker text for readability */
-    line-height: 1.6;
+
+  .cardContainer {
+    grid-template-columns: 1fr;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .section {
-      padding: 3rem 1.5rem;
-    }
-  
-    .section h2 {
-      font-size: 2rem;
-    }
-  
-    .cardContainer {
-      grid-template-columns: 1fr;
-    }
-  }
+}
