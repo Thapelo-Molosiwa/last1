@@ -32,7 +32,7 @@ const Footer = () => {
           <div className={styles.contactBlock}>
             <h3 className={styles.contactTitle}>
               GREY MATTER LABORATORIES
-              <span className={styles.smallText}>(Mayerton)</span>
+              <span className={styles.smallText}>(Meyerton)</span>
             </h3>
             <p className={styles.contactDetail}>
               Physical Address: 172 Kroonarend, Daleside, Meyerton, 1960
