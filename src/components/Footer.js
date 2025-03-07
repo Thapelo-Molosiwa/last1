@@ -9,21 +9,21 @@ const Footer = () => {
       <div className={styles.footerContent}>
         {/* Contact Section */}
         <div className={styles.contactSection}>
-          <div className={styles.contactBlock}>
-            <h3 className={styles.contactTitle}>GREY MATTER LABORATORIES (Johannesburg)</h3>
-            <p className={styles.contactDetail}>Physical Address: 1386 Block F Soshanguve, Pretoria, 0152</p>
-            <p className={styles.contactDetail}>Telephone: (+27)79 783 0760</p>
-            <p className={styles.contactDetail}>Email: lebogangm@gmatterlabs.com</p>
-            <p className={styles.contactDetail}>Website: www.gmatterlabs.co.za</p>
-            <p className={styles.contactDetail}>Contact Person: Lebogang Mogaladi</p>
-          </div>
+        <div className={styles.contactBlock}>
+  <h3 className={styles.contactTitle}>GREY MATTER LABORATORIES <span className={styles.smallText}>(Johannesburg)</span></h3>
+  <p className={styles.contactDetail}>Physical Address: 1386 Block F Soshanguve, Pretoria, 0152</p>
+  <p className={styles.contactDetail}>Telephone: (+27)79 783 0760</p>
+  <p className={styles.contactDetail}>Email: lebogangm@gmatterlabs.com</p>
+  <p className={styles.contactDetail}>Website: www.gmatterlabs.co.za</p>
+  <p className={styles.contactDetail}>Contact Person: Lebogang Mogaladi</p>
+</div>
 
-          <div className={styles.contactBlock}>
-            <h3 className={styles.contactTitle}>GREY MATTER LABORATORIES (Mayerton)</h3>
-            <p className={styles.contactDetail}>Physical Address: 172 Kroonarend, Daleside, Meyerton, 1960</p>
-            <p className={styles.contactDetail}>Email: nkululekom@gmatterlabs.com</p>
-            <p className={styles.contactDetail}>Contact Person: Nkululeko Mbonane</p>
-          </div>
+<div className={styles.contactBlock}>
+  <h3 className={styles.contactTitle}>GREY MATTER LABORATORIES <span className={styles.smallText}>(Mayerton)</span></h3>
+  <p className={styles.contactDetail}>Physical Address: 172 Kroonarend, Daleside, Meyerton, 1960</p>
+  <p className={styles.contactDetail}>Email: nkululekom@gmatterlabs.com</p>
+  <p className={styles.contactDetail}>Contact Person: Nkululeko Mbonane</p>
+</div>
 
           <div className={styles.contactBlock}>
             <h3 className={styles.contactTitle}>Working Hours</h3>
