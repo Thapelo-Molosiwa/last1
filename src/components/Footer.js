@@ -15,7 +15,7 @@ const Footer = () => {
               <span className={styles.smallText}>(Johannesburg)</span>
             </h3>
             <p className={styles.contactDetail}>
-              Physical Address: 10002 ext 35 Windmilpark, Boksburg.
+              Physical Address: 10002 EXT 35 Windmilpark, Boksburg.
             </p>
             <p className={styles.contactDetail}>Telephone: (+27)78 938 6750</p>
             <p className={styles.contactDetail}>Email: info@gmatterlabs.com</p>
