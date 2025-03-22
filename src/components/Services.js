@@ -14,7 +14,7 @@ const Services = () => {
     {
       icon: <Flame className={styles.icon} />,
       title: "Solid Fuel Analysis",
-      description: "includes analysis for portable water, coal, coke, Biomass",
+      description: "includes analysis on coal, coke and Biomass",
       available: true, // Mark as available
     },
     {

@@ -107,6 +107,12 @@ const Products = () => {
               alt="Client Logo" 
               className={styles.clientLogo}
             />
+             <img 
+              src="/WhatsApp Image 2025-03-22 at 15.23.32.jpeg" // Path to the logo in the public folder
+              alt="Client Logo" 
+              className={styles.clientLogo}
+              style={{ width: "170px", height: "100px" }} // Inline styles
+            />
             {/* <p className={styles.clientName}>ARC.LNR</p>  */}
           </div>
         </div>

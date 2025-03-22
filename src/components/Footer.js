@@ -15,16 +15,13 @@ const Footer = () => {
               <span className={styles.smallText}>(Johannesburg)</span>
             </h3>
             <p className={styles.contactDetail}>
-              Physical Address: 1386 Block F Soshanguve, Pretoria, 0152
+              Physical Address: 10002 ext 35 Windmilpark, Boksburg.
             </p>
-            <p className={styles.contactDetail}>Telephone: (+27)79 783 0760</p>
-            <p className={styles.contactDetail}>
-              Email: info@gmatterlabs.com
-            </p>
+            <p className={styles.contactDetail}>Telephone: (+27)78 938 6750</p>
+            <p className={styles.contactDetail}>Email: info@gmatterlabs.com</p>
             <p className={styles.contactDetail}>
               Website: www.gmatterlabs.co.za
             </p>
-            
           </div>
 
           <div className={styles.contactBlock}>
@@ -35,10 +32,11 @@ const Footer = () => {
             <p className={styles.contactDetail}>
               Physical Address: 172 Kroonarend, Daleside, Meyerton, 1960
             </p>
+            <p className={styles.contactDetail}>Telephone: (+27)74 189 1357</p>
+            <p className={styles.contactDetail}>Email: info@gmatterlabs.com</p>
             <p className={styles.contactDetail}>
-              Email: info@gmatterlabs.com
+              Website: www.gmatterlabs.co.za
             </p>
-            
           </div>
 
           <div className={styles.contactBlock}>
