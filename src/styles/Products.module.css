@@ -1,33 +1,33 @@
 /* Section Styling */
 .section {
-    padding: 4rem 2rem;
-    background-color: #f9fafb;
-    color: #333;
-  }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* Header Styling */
-  .header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    color: #001f4d;
-    margin-bottom: 0.5rem;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #555;
-  }
+  padding: 4rem 2rem;
+  background-color: #f9fafb;
+  color: #333;
+}
 
-  /* Our Clients Section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header Styling */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #001f4d;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Our Clients Section */
 .clientsSection {
   margin-top: 4rem;
   text-align: center;
@@ -43,9 +43,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
-  margin: 0; 
+  margin: 0;
 }
 
 .clientLogo {
@@ -58,119 +58,132 @@
   font-size: 1.2rem;
   color: #555;
   font-weight: 500;
+  text-align: center; /* Center-align the client name */
 }
-  
-  /* Intro Paragraph */
-  .intro {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 3rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #444;
-  }
-  
-  /* Product Categories Grid */
+
+/* Intro Paragraph */
+.intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+/* Product Categories Grid */
+.productCategories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Ensures 4 cards in one row */
+  gap: 1.5rem;
+}
+
+/* Category Card Styling */
+.categoryCard {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Icon Styling */
+.iconContainer {
+  background: #004080;
+  padding: 0.75rem;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.iconContainer svg {
+  color: white;
+  width: 28px;
+  height: 28px;
+}
+
+/* Category Title */
+.categoryTitle {
+  font-size: 1.4rem;
+  color: #001f4d;
+  margin-top: 0.75rem;
+}
+
+/* Category Description */
+.categoryDescription {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+}
+
+/* List of Items */
+.itemsList {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.itemsList li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.itemsList li::before {
+  content: "✔";
+  color: #004080;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .productCategories {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Ensures 4 cards in one row */
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
   }
-  
-  /* Category Card Styling */
-  .categoryCard {
-    background: white;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .productCategories {
+    grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
   }
-  
-  
-  /* Icon Styling */
-  .iconContainer {
-    background: #004080;
-    padding: 0.75rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
+
+  .title {
+    font-size: 2rem;
   }
-  
-  .iconContainer svg {
-    color: white;
-    width: 28px;
-    height: 28px;
-  }
-  
-  /* Category Title */
-  .categoryTitle {
-    font-size: 1.4rem;
-    color: #001f4d;
-    margin-top: 0.75rem;
-  }
-  
-  /* Category Description */
-  .categoryDescription {
+
+  .subtitle {
     font-size: 1rem;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 0.5rem;
   }
-  
-  /* List of Items */
-  .itemsList {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 1rem;
+
+  .intro {
+    font-size: 1rem;
   }
-  
-  .itemsList li {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.95rem;
-    color: #333;
-    margin-bottom: 0.5rem;
+
+  .categoryTitle {
+    font-size: 1.2rem;
   }
-  
-  .itemsList li::before {
-    content: "✔";
-    color: #004080;
-    font-weight: bold;
+
+  /* Responsive Design for Client Container */
+  .clientContainer {
+    flex-direction: column; /* Stack items vertically on mobile */
+    gap: 2rem; /* Increase gap for better spacing */
+    padding: 0 1rem; /* Add horizontal padding */
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .productCategories {
-      grid-template-columns: repeat(2, 1fr); /* 2 cards per row on smaller screens */
-    }
+
+  .clientLogo {
+    width: 120px; /* Adjust logo size for mobile */
   }
-  
-  @media (max-width: 768px) {
-    .productCategories {
-      grid-template-columns: repeat(1, 1fr); /* 1 card per row on mobile */
-    }
-  
-    .title {
-      font-size: 2rem;
-    }
-  
-    .subtitle {
-      font-size: 1rem;
-    }
-  
-    .intro {
-      font-size: 1rem;
-    }
-  
-    .categoryTitle {
-      font-size: 1.2rem;
-    }
+
+  .clientName {
+    font-size: 1rem; /* Adjust font size for mobile */
   }
-  
+}
